@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiversX Skill Badge</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="gradient-text">MultiversX Skill Badge</h1>
+            <p class="subtitle">Connect your wallet to get started</p>
+        </header>
+
+        <div class="cards-container">
+            <div class="card" id="card1">
+                <div class="card-icon">🎓</div>
+                <h2>Learn</h2>
+                <p>Master MultiversX development</p>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-icon">🏆</div>
+                <h2>Earn</h2>
+                <p>Get rewarded for your skills</p>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-icon">🌟</div>
+                <h2>Build</h2>
+                <p>Create amazing dApps</p>
+            </div>
+        </div>
+
+        <div class="wallet-info" id="walletInfo" style="display: none;">
+            <h2>Connected Wallet</h2>
+            <p>Address: <span id="walletAddress"></span></p>
+            <button id="disconnectBtn" class="btn btn-secondary">Disconnect</button>
+        </div>
+
+        <button id="connectBtn" class="btn btn-primary">Connect Wallet</button>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html> 
